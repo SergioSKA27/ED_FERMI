@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(layout="wide", page_title="Definiciones documentadas", page_icon=":books:", initial_sidebar_state="collapsed")
+
 st.title("Definiciones documentadas")
 st.divider()
 '''

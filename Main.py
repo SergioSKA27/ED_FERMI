@@ -16,7 +16,7 @@ show_pages(
         Page("pages/IshikawaD.py", "5. Diagrama Ishikawa", ":books:"),
         Page("pages/Contexto.py","6. Contexto del modelo",":books:" ),
         Page("pages/Utilidad.py","7. Utilidad del modelo",":books:" ),
-        Page("pages/Modeldesc1.py","8. Formulación del modelo",":books:" ),
+        Page("pages/formulacion.py","8. Formulación del modelo",":books:" ),
         Page("pages/preguntas.py","9. Respuesta a las preguntas",":books:" ),
         Page("pages/nodosyrutas.py","10. Nodos y rutas",":books:" ),
         Page("pages/Infografia.py","11. Infografía",":books:" ),
