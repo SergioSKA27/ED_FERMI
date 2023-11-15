@@ -1,7 +1,30 @@
 import streamlit as st
-import streamlit.components.v1 as components
+from st_pages import Page, show_pages, add_page_title
 
-#<div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="FERMI" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/65515eb911fd730011cbe8d6" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+# Optional -- adds the title and icon to the current page
+add_page_title()
 
-st.set_page_config(layout="wide")
-components.iframe("https://view.genial.ly/65515eb911fd730011cbe8d6", width=1200, height=675, scrolling=True)
+# Specify what pages should be shown in the sidebar, and what their titles and icons
+# should be
+show_pages(
+    [
+        Page("Main.py", "Inicio", "🏠"),
+        Page("pages/Modeldesc1.py", "1. Descripción del modelo", ":books:"),
+        Page("pages/DocDef.py", "2. Definiciones documentadas",":books:" ),
+        Page('pages/MindMap.py',"3. Lluvia de ideas",":books:" ),
+        Page("pages/Lotus.py", "4. Diagrama Lotus Blossom", ":books:"),
+        Page("pages/IshikawaD.py", "5. Diagrama Ishikawa", ":books:"),
+        Page("pages/Contexto.py","6. Contexto del modelo",":books:" ),
+        Page("pages/Utilidad.py","7. Utilidad del modelo",":books:" ),
+        Page("pages/Modeldesc1.py","8. Formulación del modelo",":books:" ),
+        Page("pages/preguntas.py","9. Respuesta a las preguntas",":books:" ),
+        Page("pages/nodosyrutas.py","10. Nodos y rutas",":books:" ),
+        Page("pages/Infografia.py","11. Infografía",":books:" ),
+        Page("pages/actualtec.py","12. Relación del modelo con la tecnología actual",":books:" ),
+        Page("pages/conclusiones.py","13. Conclusiones",":books:" ),
+        Page("pages/videos.py","14. Video",":books:" ),
+        Page("pages/referencias.py","15. Referencias",":books:" ),
+
+
+    ]
+)
