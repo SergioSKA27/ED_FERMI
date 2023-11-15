@@ -6,3 +6,4 @@ st.set_page_config(layout="wide", page_title="Diagrama Ishikawa", page_icon=":bo
 st.title("Diagrama Ishikawa")
 st.divider()
 components.iframe("https://view.genial.ly/6553391d54cfe80011391d6f", width=1200, height=675, scrolling=True)
+

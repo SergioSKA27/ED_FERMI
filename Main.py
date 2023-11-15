@@ -1,5 +1,6 @@
 import streamlit as st
 from st_pages import Page, show_pages, add_page_title
+import base64
 
 # Optional -- adds the title and icon to the current page
 #add_page_title()
@@ -31,6 +32,19 @@ show_pages(
 
 st.title("Inicio :house:")
 st.header("Desintegración de Partículas y el Modelo de Fermi.")
+cols = st.columns(2)
+with cols[0]:
+    st.write("Integrantes:")
+    st.write("Escalante Leon Diego Armando")
+    st.write("Fernández Castañeda Alexia")
+    st.write("López Martinez Sergio Demis")
+
+with cols[1]:
+    st.write("Grupo:")
+    st.write("")
+    st.write("Profesor:")
+    st.write("")
+
 st.divider()
 '''
 La desintegración beta es un fenómeno nuclear fascinante que ha sido objeto de estudio durante décadas.
@@ -55,3 +69,13 @@ el modelo de Fermi. Esperamos que este documento sea de interés para cualquier 
 partículas, la tecnología nuclear o la ciencia en general.
 
 '''
+
+
+
+
+
+st.write("Si desea puede descargar el documento en pdf en el siguiente enlace:")
+with open("fermi.pdf", "rb") as f:
+    bytes = f.read()
+    b64 = base64.b64encode(bytes).decode()
+    st.download_button(label='Descargar PDF',data=f,mime='application/pdf',help='Descargar el documento en pdf')

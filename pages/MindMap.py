@@ -1,5 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
+
+
 #No sirve:(
 st.set_page_config(layout="wide", page_title="Lluvia de ideas", page_icon=":books:", initial_sidebar_state="collapsed")
 
