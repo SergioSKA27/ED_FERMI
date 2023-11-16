@@ -10,4 +10,4 @@ components.iframe("https://view.genial.ly/65515eb911fd730011cbe8d6", width=1200,
 
 st.header("Video")
 st.divider()
-st.video("https://www.youtube.com/watch?v=Zz95_VvTxZM")
+st.video("https://youtu.be/FGQXE5UiCc4")
